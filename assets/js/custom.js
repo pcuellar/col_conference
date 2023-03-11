@@ -42,7 +42,7 @@
 	/*  2. EVENT TIME COUNTER
 	/* ----------------------------------------------------------- */
 	
-	$('#mu-event-counter').countdown('2020/02/10').on('update.countdown', function(event) {
+	$('#mu-event-counter').countdown('2023/04/28').on('update.countdown', function(event) {
 	  var $this = $(this).html(event.strftime(''
 	    + '<span class="mu-event-counter-block"><span>%D</span> Days</span> '
 	    + '<span class="mu-event-counter-block"><span>%H</span> Hours</span> '
@@ -109,13 +109,13 @@
 	/*  4. VIDEO POPUP
 	/* ----------------------------------------------------------- */
 
-   $('.mu-video-play-btn').on('click', function(event) {
+  /*  $('.mu-video-play-btn').on('click', function(event) {
 	   
         event.preventDefault();
         
         $('.mu-video-iframe-area').addClass('mu-video-iframe-display');
        
-    });
+    }); */
    
     // when click the close btn
 

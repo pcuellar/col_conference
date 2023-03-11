@@ -9,7 +9,7 @@ Author URI : http://www.markups.io/
 .mu-video-overlay {
 	background-color: #a5d549;/* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #64b3f4, #a5d549);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #64b3f4, #a5d549); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #64b3f41b, #a4d54985); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 

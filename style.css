@@ -221,7 +221,7 @@ button:focus {
 /*--------------------*/
 
 #mu-hero {
-	background-image: url("assets/images/head-featured-bg.jpg");
+	background-image: url("assets/images/banner_1.png");
 	display: inline;
 	float: left;
 	width: 100%;
@@ -436,8 +436,10 @@ button:focus {
 .mu-about-right {
 	display: inline;
 	float: left;
-	margin-top: 30px;
 	width: 100%;
+}
+.mu-about-right ul {
+	margin-left: 40px;
 }
 
 
@@ -448,7 +450,7 @@ button:focus {
 
 
 #mu-video {
-	background-image: url("assets/images/about-video-bg.jpg");
+	background-image: url("assets/images/banner_1.png");
 	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -744,7 +746,10 @@ button:focus {
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
-
+.mu-single-speakers img {
+	width: 270px;
+	height: 300px;
+}
 .mu-speakers-slider .slick-next {
 	right: -60px;
 }
@@ -935,6 +940,12 @@ button:focus {
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
+.logo_conf {
+	width: 200px;
+	border: solid 2px #64b3f4;
+	margin: 10px 0 0 10px;
+	background-color: white;
+}
 
 .mu-register-btn:hover,
 .mu-register-btn:focus,
@@ -962,7 +973,7 @@ button:focus {
 /*--------------------*/
 
 #mu-register {
-	background-image: url("assets/images/register-bg.jpg");
+	background-image: url("assets/images/banner_1.png");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
