@@ -426,6 +426,9 @@ button:focus {
 	z-index: 10;
 	text-transform: capitalize;
 }
+.hiden {
+	display: none;
+}
 
 .mu-about-left {
 	display: inline;
@@ -437,6 +440,9 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
+}
+.mu-about-right p {
+	text-align: justify;
 }
 .mu-about-right ul {
 	margin-left: 40px;
@@ -882,6 +888,12 @@ button:focus {
 	overflow: hidden;
 }
 
+.mu-single-price img {
+	width: 330px;
+	height: 186px;
+	object-fit: contain;
+}
+
 .mu-single-price-head {
 	color: #555;
 	display: inline;
@@ -942,9 +954,7 @@ button:focus {
 }
 .logo_conf {
 	width: 200px;
-	border: solid 2px #64b3f4;
 	margin: 10px 0 0 10px;
-	background-color: white;
 }
 
 .mu-register-btn:hover,

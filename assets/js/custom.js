@@ -44,10 +44,10 @@
 	
 	$('#mu-event-counter').countdown('2023/04/28').on('update.countdown', function(event) {
 	  var $this = $(this).html(event.strftime(''
-	    + '<span class="mu-event-counter-block"><span>%D</span> Days</span> '
-	    + '<span class="mu-event-counter-block"><span>%H</span> Hours</span> '
+	    + '<span class="mu-event-counter-block"><span>%D</span> Días</span> '
+	    + '<span class="mu-event-counter-block"><span>%H</span> Horas</span> '
 	    + '<span class="mu-event-counter-block"><span>%M</span> Mins</span> '
-	    + '<span class="mu-event-counter-block"><span>%S</span> Secs</span>'));
+	    + '<span class="mu-event-counter-block"><span>%S</span> Segs</span>'));
 	});
 
 	
@@ -109,13 +109,13 @@
 	/*  4. VIDEO POPUP
 	/* ----------------------------------------------------------- */
 
-  /*  $('.mu-video-play-btn').on('click', function(event) {
+  $('.mu-video-play-btn').on('click', function(event) {
 	   
         event.preventDefault();
         
         $('.mu-video-iframe-area').addClass('mu-video-iframe-display');
        
-    }); */
+    });
    
     // when click the close btn
 
