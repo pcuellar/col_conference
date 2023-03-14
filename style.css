@@ -221,14 +221,16 @@ button:focus {
 /*--------------------*/
 
 #mu-hero {
-	background-image: url("assets/images/banner_1.png");
+	background-image: url("assets/images/white_map.png");
 	display: inline;
 	float: left;
 	width: 100%;
-	background-position: center center;
+	background-color: #19191a;
+	background-position: top center;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 40%;
 }
 
 .mu-hero-overlay {
@@ -357,6 +359,7 @@ button:focus {
 /*--------------------*/
 
 #mu-hero .navbar-default {
+	height: 90px;
 	background-color: #fff;
 	border-color: #e7e7e7;
 	padding: 5px 0;
@@ -375,6 +378,10 @@ button:focus {
 	padding: 15px 15px;
 	font-size: 28px;
 	line-height: 20px;
+}
+
+.navbar-brand img {
+	width: 120px;
 }
 
 .mu-navbar .mu-menu li a {
@@ -418,6 +425,12 @@ button:focus {
 	padding: 0 120px;
 	width: 100%;
 }
+.mu-contact-mail {
+	width: 250px;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+}
 
 .mu-title {
 	color: #1c1b1b;
@@ -456,14 +469,26 @@ button:focus {
 
 
 #mu-video {
-	background-image: url("assets/images/banner_1.png");
+	position: relative;
+	background-image: url("assets/images/white_map.png");
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: top center;
+	background-color: #0168FC;
 	-webkit-background-size: cover;
-	background-size: cover;
+	background-size: 40%;
+	background-repeat: no-repeat;
 	display: inline;
 	float: left;
 	width: 100%;
+}
+#mu-video img{
+	width: 200px;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
 }
 
 .mu-video-overlay {
@@ -474,6 +499,7 @@ button:focus {
 }
 
 .mu-video-area {
+	position: relative;
 	display: inline;
 	float: left;
 	padding: 200px 0;
@@ -481,9 +507,15 @@ button:focus {
 	width: 100%;
 }
 
-.mu-video-area h2 {
+.mu-video-area > h2 {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 	color: #fff;
 }
+
 
 .mu-video-content {
 	display: inline;
@@ -508,11 +540,31 @@ button:focus {
 	transition: all 0.5s;
 }
 
+.mu-video-play-btn {
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	z-index: 100;
+	transform: translate(-50%);
+	background-color: #0168FC;
+	opacity: 0.8;
+}
+
 .mu-video-play-btn:hover,
 .mu-video-play-btn:focus {
 	color: #fff;
+	left: 48%;
 	-webkit-transform: scale(1.2);
 	        transform: scale(1.2);
+}
+
+.mu-video-subsribe {
+	position: absolute;
+	left: 50%;
+	top: 80%;
+	z-index: 100;
+	transform: translate(-50%);
+	background-color: #0168FC;
 }
 
 .mu-video-close-btn {
@@ -541,7 +593,7 @@ button:focus {
 	        transform: scale(1.2);
 }
 
-.mu-video-iframe-area {
+.mu-video-iframe-area, .mu-orginizer-frame {
 	background-color: rgba(0,0,0,0.84);
 	position: fixed;
 	top: 0;
