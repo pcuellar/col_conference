@@ -19,7 +19,7 @@
 **/
 
 
-
+import { organizersEn } from "./constants.js";
 (function ($) {
 
 
@@ -208,10 +208,17 @@
 	/*  8. ORGANIZER POP UP
 	/* ----------------------------------------------------------- */
 
-	$('.mu-single-speakers').on('click', function (event) {
-
+	$('.mu-single-organizer').on('click', function (event) {
+		const hostname = 'http://' + window.location.hostname;
+		console.log(hostname);
 		event.preventDefault();
-
+		const currId = event.currentTarget.id;
+		const currOrg = organizersEn.filter(org => org.id === currId)[0]
+		const bioPic = document.getElementById("bio-pic")
+    bioPic.src = `${hostname}/assets/images/${currOrg.pic}`
+		$('#mu-org-name').html(currOrg.name)
+		$('#bio-text').html(currOrg.bio)
+		$('#bio-sumary').html(currOrg.bioSumary)
 		$('.mu-orginizer-frame').addClass('mu-video-iframe-display');
 
 	});
@@ -221,9 +228,7 @@
     // disappear iframe window
     
 		$('#mu-close-about').on('click', function (event) {
-
 			event.preventDefault();
-	
 			$('.mu-orginizer-frame').removeClass('mu-video-iframe-display');
 	
 		});

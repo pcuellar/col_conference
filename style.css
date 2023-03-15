@@ -135,7 +135,6 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
 }
 
 address {
@@ -1420,6 +1419,15 @@ button:focus {
 	transition: all 0.5s;
 }
 
+/*--------------------*/
+/* ABOUT ORGANIZER*/
+/*--------------------*/
+
+.mu-bio-pic {
+	width: 550px;
+	height: 360px;
+	object-fit: cover;
+}
 
 
 /*--------------------*/
