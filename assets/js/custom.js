@@ -209,14 +209,13 @@ import { organizersEn } from "./constants.js";
 	/* ----------------------------------------------------------- */
 
 	$('.mu-single-organizer').on('click', function (event) {
-		const hostname = 'http://' + window.location.hostname;
-		console.log(hostname);
+
+		console.log("organizersEn", organizersEn[0]);
 		event.preventDefault();
 		const currId = event.currentTarget.id;
 		const currOrg = organizersEn.filter(org => org.id === currId)[0]
-		const bioPic = document.getElementById("bio-pic")
-    bioPic.src = `${hostname}/assets/images/${currOrg.pic}`
 		$('#mu-org-name').html(currOrg.name)
+		$('#bio-pic').attr('src',`/assets/images/${currOrg.pic}`)
 		$('#bio-text').html(currOrg.bio)
 		$('#bio-sumary').html(currOrg.bioSumary)
 		$('.mu-orginizer-frame').addClass('mu-video-iframe-display');
