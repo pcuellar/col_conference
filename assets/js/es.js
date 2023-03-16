@@ -54,8 +54,9 @@ export const esText = {
     role2: "Vice Presidente",
     role3: "Comité Ejecutivo (Universidad de Chicago)",
     role4: "Comité Ejecutivo (Universidad de Chicago)",
-    role5: "Comité Ejecutivo (Universidad de Chicago)",
-    role6: "Comité Ejecutivo"
+    role5: "Comité Ejecutivo (Instituto de Tecnología de Massachusetts)",
+    role6: "Comité Ejecutivo (Oficina Internacional de Florida)",
+    role7: "Comité Ejecutivo (Universidad del Noroeste)"
   },
   donations: {
     title: "donaciones",

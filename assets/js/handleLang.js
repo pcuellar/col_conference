@@ -9,6 +9,7 @@ function handleLang(lang) {
     const items = sec.items
     tarnslateBySection(lang, sec.name, items)
   })
+  selectedLang (lang)
 }
 
 function tarnslateBySection(lang, section = "header", items) {
@@ -36,6 +37,25 @@ function tarnslateBySection(lang, section = "header", items) {
 
 }
 
+function selectedLang (currentLang) {
+  if(currentLang==="es") {
+    btnEs.style.backgroundColor = "white"
+    btnEs.style.color = "black"
+    btnEn.style.color = "white"
+    btnEn.style.backgroundColor = "#0168FC"
+    btnEs.textContent = "Español"
+    btnEn.textContent = "Inglés"
+
+  }else{
+    btnEn.style.backgroundColor = "white"
+    btnEn.style.color = "black"
+    btnEs.style.color = "white"
+    btnEs.style.backgroundColor = "#0168FC"
+    btnEs.textContent = "Spanish"
+    btnEn.textContent = "English"
+  }
+}
+
 const btnEs = document.getElementById('btn-es');
 const btnEn = document.getElementById('btn-en');
 
@@ -43,7 +63,7 @@ btnEs.addEventListener('click', () => handleLang('es'));
 btnEn.addEventListener('click', () => handleLang('en'));
 window.addEventListener('load', () => {
   const currentLang = !!localStorage.getItem("lang")
-  console.log(currentLang);
+  selectedLang ("es")
   if(!currentLang)localStorage.setItem("lang", "es")
-  
+  handleLang("es")
 });

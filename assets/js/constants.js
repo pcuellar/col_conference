@@ -129,6 +129,34 @@ export const organizersEn = [
     of Antioquia.`,
     esBioSumary: '',
     esBio: `My name is Daniel Andres Martinez Perez born and raised in the city of Medellin, my father is originally from Choco and my mother from Antioquia. I am a veterinarian and Master in basic biomedical sciences with emphasis in neurosciences from the University of Antioquia, currently a PhD candidate in public health with emphasis in brain, behavior and environment at Florida International University. I have worked as a veterinarian in small animal species, as well as a professor at the University of Antioquia and research assistant in the neurosciences group of Antioquia.`
+  },
+  {
+    id: "ja07",
+    name: "Juan Jose Muños",
+    pic: "juan.png",
+    role: "Miembro del Comité Ejecutivo",
+    bioSumary: ``,
+    bio: `My name is Juan José Muñoz Arango, I am 19 years old and I am from the city of Cali. 
+      I graduated from the Lycée Français de Cali with a command of four languages and two high 
+      school diplomas, one Colombian and one French. I am currently studying Political Science and 
+      Economics at Northeastern University, besides that I also work as a Guest Ambassador at the TD 
+      Garden and not long ago I worked in an NGO called Barrio Planta Project in which I raise funds 
+      to pay for school for children from Central America. I hope one day to be able to work in a 
+      worldwide organization. My goal is to generate a good impact in every possible place. I want to 
+      be able to dedicate all my work and effort to the good of all the people of Colombia and the whole world.
+    `,
+    esBioSumary: '',
+    esBio: `
+      Mi nombre es Juan José Muñoz Arango, tengo 19 años y soy de la ciudad de Cali. Me gradué del 
+      Liceo Francés de Cali con un dominio de cuatro idiomas y con dos diplomas de bachillerato, 
+      uno colombiano y uno francés. Actualmente estudio Ciencias Políticas y Economía en Northeastern 
+      University, además de eso también trabajo como Guest Ambassador en el TD Garden y no hace mucho 
+      trabajé en una ONG llamada Barrio Planta Project en la cual recauda fondos para pagarle el colegio 
+      a niños de Centroamérica. Tengo la esperanza de algún día poder trabajar en una organización mundial, 
+      tengo como meta generar un buen impacto en cada lugar posible, quiero poder dedicarle todo mi trabajo y mi 
+      esfuerzo al bien de toda la gente de Colombia y del mundo entero.
+
+    `
   }
 ]
 
@@ -168,7 +196,7 @@ export const sections = [
   },
   {
     name: 'hosts',
-    items: '#host-title, #host-role1, #host-role2, #host-role3, #host-role4, #host-role5, #host-role6'
+    items: '#host-title, #host-role1, #host-role2, #host-role3, #host-role4, #host-role5, #host-role6, #host-role7'
   },
   {
     name: 'donations',

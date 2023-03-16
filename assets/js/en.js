@@ -53,8 +53,9 @@ export const enText = {
     role2: "Vice President",
     role3: "Executive Committee (University of Chicago)",
     role4: "Executive Committee (University of Chicago)",
-    role5: "Executive Committee (University of Chicago)",
-    role6: "Executive Committee"
+    role5: "Executive Committee (Massachusetts Institute of Technology)",
+    role6: "Executive Committee (FIU)",
+    role7: "Executive Committee (Northeastern University)"
   },
   donations: {
     title: "Donations",

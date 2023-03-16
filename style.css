@@ -600,7 +600,7 @@ button:focus {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	padding: 12% 0;
+	padding: 10% 0;
 	text-align: center;
 	z-index: 9999;
 	display: none;
@@ -1008,6 +1008,17 @@ button:focus {
 .logo_conf {
 	width: 200px;
 	margin: 10px 0 0 10px;
+}
+
+.mu-lang-btn button {
+	margin: 10px 0 0 10px;
+}
+
+.mu-lang-btn button {
+	width: 85px;
+	background-color: #0168FC;
+	color: white;
+	border: 1px solid white;
 }
 
 .mu-register-btn:hover,
