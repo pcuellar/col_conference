@@ -13,12 +13,8 @@ function handleLang(lang) {
 }
 
 function tarnslateBySection(lang, section = "header", items) {
-  if (section === "aboutConference") {
-    console.log(section);
-  }
   // Selecciona todos los elementos que deseas traducir
   const elementosTraducidos = document.querySelectorAll(items);
-  console.log("elementosTraducidos", elementosTraducidos);
   // Selecciona el diccionario correspondiente al lang elegido
   let diccionario = lang === 'es' ? esText : enText;
   diccionario = diccionario[section]
@@ -29,7 +25,6 @@ function tarnslateBySection(lang, section = "header", items) {
     const elId = elementosTraducidos[i].id
     for (let j = 0; j < dicKey.length; j++) {
       if (elId.includes(dicKey[j])) {
-        console.log(dicKey[j],"----", elId);
         elementosTraducidos[i].textContent = dicVal[j];
       }
     }

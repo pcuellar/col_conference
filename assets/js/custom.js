@@ -113,6 +113,7 @@ import { organizersEn } from "./constants.js";
 		event.preventDefault();
 
 		$('.mu-video-iframe-area').addClass('mu-video-iframe-display');
+		$('#prev-video')[0].currentTime = 3;
 		$('#prev-video')[0].play();
 
 	});
@@ -135,6 +136,7 @@ import { organizersEn } from "./constants.js";
 
 		$('.mu-video-iframe').attr('src', $('.mu-video-iframe').attr('src'));
 		$('#prev-video')[0].pause();
+		$('#prev-video')[0].currentTime = 0;
 
 	});
 

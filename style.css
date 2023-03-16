@@ -1622,7 +1622,9 @@ button:focus {
 
 
 @media (max-width: 640px){
-	
+	.slick-slide img {
+		display: inline-block;
+	}
 	.mu-event-counter-block {
 		height: 100px;
 		width: 100px;
