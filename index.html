@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Colombian Conforence</title>
+	<title>Colombian Conference</title>
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/icon" href="assets/images/true_ico.ico" />
+	<link rel="shortcut icon" type="image/icon" href="assets/images/new_ico.ico" />
 	<!-- Font Awesome -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Bootstrap -->
@@ -56,32 +56,34 @@
 					</button>
 
 					<!-- Logo -->
-					<a class="navbar-brand" href="index.html">Co-Conference</a>
-
+					<a class="navbar-brand" href="index.html"></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav mu-menu navbar-right">
-						<li><a href="#mu-hero">Inicio</a></li>
-						<li><a href="#mu-about">La conferencia</a></li>
+						<li><a href="#mu-hero" id="nav-home">Inicio</a></li>
+						<li><a href="#mu-about" id="nav-about">La conferencia</a></li>
 						<!-- <li><a href="#mu-schedule">Calendario</a></li> -->
-						<li><a href="#mu-speakers">Conferencistas</a></li>
-						<li><a href="#mu-faq">Organizadores</a></li>
+						<li><a href="#mu-speakers" id="nav-speakers">Conferencistas</a></li>
+						<li><a href="#mu-faq" id="nav-hosts">Organizadores</a></li>
 						<!-- <li><a href="#mu-sponsors">Patrocinadores</a></li> -->
-						<li><a href="#mu-pricing">Donaciones</a></li>
-						<li><a href="#mu-contact">Contactanos</a></li>
+						<li><a href="#mu-pricing" id="nav-donations">Donaciones</a></li>
+						<li><a href="#mu-contact" id="nav-contact">Contactanos</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
 		<!-- End menu -->
 
-		<div class="mu-hero-overlay">
+		<div class="mu-hero-overlay" style="position: relative;">
 			<img class="logo_conf" src="./assets/images/logo_white.png" alt="">
+			<div class="mu-lang-btn">
+				<button id="btn-es">Español</button>
+				<button id="btn-en">Inglés</button>
+			</div>
 			<div class="container">
 				<div class="mu-hero-area">
-
 					<!-- Start hero featured area -->
 					<div class="mu-hero-featured-area">
 						<!-- Start center Logo -->
@@ -94,9 +96,9 @@
 
 						<div class="mu-hero-featured-content">
 
-							<h1>Bienvenidos a la Conferencia Colombiana 2023:</h1>
-							<h2>Soluciones Innovadoras para Colombia</h2>
-							<p class="mu-event-date-line">28 - 29 Abril 2023. Cambridge, Estados Unidos</p>
+							<h1 id="ban-title">Bienvenidos a la Conferencia Colombiana 2023:</h1>
+							<h2 id="ban-subtitle">Soluciones Innovadoras para Colombia</h2>
+							<p id="ban-briefDate" class="mu-event-date-line">28 - 29 Abril 2023. Cambridge, Estados Unidos</p>
 
 							<div class="mu-event-counter-area">
 								<div id="mu-event-counter">
@@ -131,8 +133,8 @@
 								</div>
 								<div class="col-md-6">
 									<div class="mu-about-right">
-										<h2>Misión</h2>
-										<p>
+										<h2 id="about-missionTitle">Misión</h2>
+										<p id="about-missiontText">
 											Unir a través de un espacio académico y científico a universidades, gobierno,
 											empresas, comunidades y organizaciones sin ánimo de lucro en el que se socialicen las
 											iniciativas que se están implementando
@@ -141,8 +143,8 @@
 											problemáticas más urgentes en el país, y que promueban su desarrollo.
 										</p>
 										<hr>
-										<h2>Visión</h2>
-										<p>
+										<h2 id="about-visionTitle">Visión</h2>
+										<p id="about-visionText">
 											Convertirnos en una organización referente a nivel nacional e internacional de colaboración
 											para generar soluciones innovadoras y efectivas para
 											el desarrollo de nuestro país.
@@ -164,14 +166,14 @@
 			<img src="./assets/images/Shaping.png" alt="">
 			<a class="mu-video-play-btn" href=""><i class="fa fa-play" aria-hidden="true"></i></a>
 			<a class="mu-video-subsribe" href="https://www.youtube.com/@conferenciacolombiana4894" target="_blank">
-				<button>Suscríbete a nuestro canal</button>
+				<button id="about-previousConf">Suscríbete a nuestro canal</button>
 			</a>
 			<div class="mu-video-overlay">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
 							<div class="mu-video-area">
-								<h2>Versiones anteriores</h2>
+								<h2 id="about-subscribe">Versiones anteriores</h2>
 							</div>
 						</div>
 					</div>
@@ -181,7 +183,7 @@
 			<div class="mu-video-content">
 				<div class="mu-video-iframe-area">
 					<a class="mu-video-close-btn" href="" target="_blank"><i class="fa fa-times" aria-hidden="true"></i></a>
-					<video src="./assets/images/prev_prom.mp4" controls></video>
+					<video id="prev-video" src="./assets/images/prev_prom.mp4" controls></video>
 				</div>
 			</div>
 			<!-- End Video content -->
@@ -196,7 +198,7 @@
 						<div class="mu-speakers-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Conferencistas 2021</h2>
+								<h2 class="mu-title" id="about-conf2021">Conferencistas 2021</h2>
 								<p>
 									COLOMBIAN CONFERENCE 2021: DISRUPTIVE SOLUTIONS FOR CHALLENGING TIMES
 								</p>
@@ -284,7 +286,7 @@
 						<div class="mu-speakers-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Conferencistas 2019</h2>
+								<h2 class="mu-title" id="about-conf2019">Conferencistas 2019</h2>
 								<p>
 									COLOMBIAN CONFERENCE 2019. SHAPING COLOMBIA, TOWARDS SUSTAINABLE DEVELOPMENT
 								</p>
@@ -372,7 +374,7 @@
 						<div class="mu-speakers-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Conferencistas 2018</h2>
+								<h2 class="mu-title" id="about-conf2018">Conferencistas 2018</h2>
 								<p>
 									COLOMBIAN 2040. THE COUNTRY WE WANT
 								</p>
@@ -631,8 +633,8 @@
 						<div class="mu-speakers-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Conferencistas 2023</h2>
-								<p>
+								<h2 class="mu-title" id="speaker-conf2023">Conferencistas 2023</h2>
+								<p id="speaker-soon">
 									Los anuncíaremos muy pronto
 								</p>
 							</div>
@@ -791,10 +793,10 @@
 
 					<div class="col-md-6">
 						<div class="mu-venue-address">
-							<h2>LUGAR <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
-							<h3>Universidad de Harvard</h3>
-							<h4>1350 Massachusetts Avenue - 8th Floor</h4>
-							<p>
+							<h2 id="venue-title">LUGAR <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+							<h3 id="venue-location">Universidad de Harvard</h3>
+							<h4 id="venue-address">1350 Massachusetts Avenue - 8th Floor</h4>
+							<p id="venue-detail">
 								Cambridge, MA 0238 - Estados Unidos
 							</p>
 						</div>
@@ -813,7 +815,7 @@
 						<div class="mu-register-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Formulario de Registro</h2>
+								<h2 class="mu-title" id="reg-title">Formulario de Registro</h2>
 							</div>
 
 							<div class="mu-register-content">
@@ -855,7 +857,7 @@
 										href="https://docs.google.com/forms/d/e/1FAIpQLSeGpuQTh6EboOPxUtIoeXB3PpRS1ikke_6v0n9G5BhF6yXPZQ/viewform?usp=sf_link"
 										target="_blank"
 									>
-										<button type="button" class="mu-reg-submit-btn">REGISTER NOW</button>
+										<button id="reg-button" type="button" class="mu-reg-submit-btn">REGISTER NOW</button>
 									</a>
 								</form>
 							</div>
@@ -875,7 +877,7 @@
 						<div class="mu-speakers-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Organizadores</h2>
+								<h2 class="mu-title" id="host-title">Organizadores</h2>
 							</div>
 
 							<!-- Start Organizer Content -->
@@ -888,12 +890,7 @@
 										<img class="mu-mini-organizer" src="assets/images/pedro.jpg" alt="speaker img">
 										<div class="mu-single-speakers-info">
 											<h3>Pedro De la Torre</h3>
-											<p>Presidente</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
+											<p id="host-role1">Presidente</p>
 										</div>
 									</div>
 									<!-- End single speaker -->
@@ -903,12 +900,7 @@
 										<img src="assets/images/paula.JPG" alt="speaker img">
 										<div class="mu-single-speakers-info">
 											<h3>Paula Perez</h3>
-											<p>Vice Presidente</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
+											<p id="host-role2">Vice Presidente</p>
 										</div>
 									</div>
 									<!-- End single speaker -->
@@ -919,12 +911,7 @@
 										<img src="assets/images/gabriel.jpg" alt="speaker img">
 										<div class="mu-single-speakers-info">
 											<h3>Gabriel Angarita</h3>
-											<p>Comité Ejecutivo (Universidad de Chicago)</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
+											<p id="host-role3">Comité Ejecutivo (Universidad de Chicago)</p>
 										</div>
 									</div>
 									<!-- End single speaker -->
@@ -935,12 +922,7 @@
 										<img src="assets/images/laura.JPG" alt="speaker img">
 										<div class="mu-single-speakers-info">
 											<h3>Laura Henao </h3>
-											<p>Comité Ejecutivo (Universidad de Chicago)</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
+											<p id="host-role4">Comité Ejecutivo (Universidad de Chicago)</p>
 										</div>
 									</div>
 									<!-- End single speaker -->
@@ -950,12 +932,7 @@
 										<img src="assets/images/edwin.JPG" alt="speaker img">
 										<div class="mu-single-speakers-info">
 											<h3>Edwin Pedrozo</h3>
-											<p>Comité Ejecutivo (Universidad de Chicago)</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
+											<p id="host-role5">Comité Ejecutivo</p>
 										</div>
 									</div>
 									<!-- End single speaker -->
@@ -965,12 +942,17 @@
 										<img src="assets/images/daniel.JPG" alt="speaker img">
 										<div class="mu-single-speakers-info">
 											<h3>Daniel Martinez</h3>
-											<p>Business Consultant</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
+											<p id="host-role6">Comité Ejecutivo</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers mu-single-organizer" id="ja07">
+										<img src="assets/images/juan.png" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>Juan Jose Muñoz</h3>
+											<p id="host-role7">Comité Ejecutivo</p>
 										</div>
 									</div>
 									<!-- End single speaker -->
@@ -1130,8 +1112,8 @@
 						<div class="mu-pricing-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Donaciones</h2>
-								<p>
+								<h2 class="mu-title" id="dona-title">Donaciones</h2>
+								<p id="dona-info">
 									Por donaciones superiores a $50 USD reclama uno de los
 									siguientes artículo en la conferencia
 								</p>
@@ -1144,13 +1126,8 @@
 									<div class="col-md-4">
 										<div class="mu-single-price">
 											<img src="./assets/images/13.png" alt="">
-											<h3 class="mu-price-title">Gorra</h3>
-											<ul>
-												<li>Basic Class Ticket</li>
-												<li>Access to all sessions</li>
-												<li>Free Breakfast</li>
-											</ul>
-											<a class="mu-register-btn" href="#"> Contactanos</a>
+											<h3 id="dona-cap" class="mu-price-title">Gorra</h3>
+											<a id="dona-buttons" class="mu-register-btn" href="#"> Contactanos</a>
 										</div>
 									</div>
 									<!-- / single price item -->
@@ -1160,13 +1137,8 @@
 										<div class="mu-single-price mu-popular-price">
 											<img src="./assets/images/14.png" alt="">
 											<span class="mu-price-tag">Popular</span>
-											<h3 class="mu-price-title">Camiseta</h3>
-											<ul>
-												<li>Basic Class Ticket</li>
-												<li>Access to all sessions</li>
-												<li>Free Breakfast</li>
-											</ul>
-											<a class="mu-register-btn" href="#"> Contactanos</a>
+											<h3 id="dona-shirt" class="mu-price-title">Camiseta</h3>
+											<a id="dona-buttons" class="mu-register-btn" href="#"> Contactanos</a>
 										</div>
 									</div>
 									<!-- / single price item -->
@@ -1175,13 +1147,8 @@
 									<div class="col-md-4">
 										<div class="mu-single-price">
 											<img src="./assets/images/TULA.png" alt="">
-											<h3 class="mu-price-title">Tula</h3>
-											<ul>
-												<li>Basic Class Ticket</li>
-												<li>Access to all sessions</li>
-												<li>Free Breakfast</li>
-											</ul>
-											<a class="mu-register-btn" href="#"> Contactanos</a>
+											<h3 id="dona-bag" class="mu-price-title">Tula</h3>
+											<a id="dona-buttons" class="mu-register-btn" href="#"> Contactanos</a>
 										</div>
 									</div>
 									<!-- / single price item -->
@@ -1204,7 +1171,7 @@
 						<div class="mu-contact-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-heading-title">Contáctanos</h2>
+								<h2 id="foot-contact" class="mu-heading-title">Contáctanos</h2>
 								<div class="mu-contact-mail">
 									<div class="mu-social-media">
 										<a href="#"><i class="fa fa-google"></i></a>
@@ -1255,7 +1222,7 @@
 	<footer id="mu-footer" role="contentinfo">
 		<div class="container">
 			<div class="mu-footer-area">
-				<h2>Síguenos en redes</h2>
+				<h2 id="foot-follow">Síguenos en redes</h2>
 				<div class="mu-footer-top">
 					<div class="mu-social-media">
 						<a href="https://www.facebook.com/ConferenciaColombianaBoston" target="_blank"><i
@@ -1296,10 +1263,7 @@
 
 	<!-- Custom js -->
 	<script type="module" src="assets/js/custom.js"></script>
-
-
-
-
-</body>
+	<script type="module" src="assets/js/handleLang.js"></script>
+	</body>
 
 </html>
