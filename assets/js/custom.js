@@ -44,10 +44,9 @@ import { organizersEn } from "./constants.js";
 
 	$('#mu-event-counter').countdown('2023/04/28').on('update.countdown', function (event) {
 		var $this = $(this).html(event.strftime(''
-			+ '<span class="mu-event-counter-block"><span>%D</span> Días</span> '
-			+ '<span class="mu-event-counter-block"><span>%H</span> Horas</span> '
-			+ '<span class="mu-event-counter-block"><span>%M</span> Mins</span> '
-			+ '<span class="mu-event-counter-block"><span>%S</span> Segs</span>'));
+			+ '<span class="mu-event-counter-block"><span>%D</span> D</span> '
+			+ '<span class="mu-event-counter-block"><span>%H</span> H</span> '
+			+ '<span class="mu-event-counter-block"><span>%S</span> S</span>'));
 	});
 
 
@@ -114,6 +113,8 @@ import { organizersEn } from "./constants.js";
 		event.preventDefault();
 
 		$('.mu-video-iframe-area').addClass('mu-video-iframe-display');
+		$('#prev-video')[0].currentTime = 3;
+		$('#prev-video')[0].play();
 
 	});
 
@@ -134,6 +135,8 @@ import { organizersEn } from "./constants.js";
 	$('.mu-video-close-btn').click(function () {
 
 		$('.mu-video-iframe').attr('src', $('.mu-video-iframe').attr('src'));
+		$('#prev-video')[0].pause();
+		$('#prev-video')[0].currentTime = 0;
 
 	});
 
@@ -209,15 +212,15 @@ import { organizersEn } from "./constants.js";
 	/* ----------------------------------------------------------- */
 
 	$('.mu-single-organizer').on('click', function (event) {
-
+		const currentLang = localStorage.getItem("lang") 
 		console.log("organizersEn", organizersEn[0]);
 		event.preventDefault();
 		const currId = event.currentTarget.id;
 		const currOrg = organizersEn.filter(org => org.id === currId)[0]
 		$('#mu-org-name').html(currOrg.name)
 		$('#bio-pic').attr('src',`/assets/images/${currOrg.pic}`)
-		$('#bio-text').html(currOrg.bio)
-		$('#bio-sumary').html(currOrg.bioSumary)
+		$('#bio-text').html(currentLang === "es" ? currOrg.esBio:currOrg.bio)
+		$('#bio-sumary').html(currentLang === "es" ? currOrg.esBioSumary: currOrg.bioSumary)
 		$('.mu-orginizer-frame').addClass('mu-video-iframe-display');
 
 	});
