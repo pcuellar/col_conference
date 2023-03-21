@@ -35,7 +35,7 @@ export const organizersEn = [
   {
     id: "pa02",
     name: "Paula Perez",
-    pic: "paula.JPG",
+    pic: "paula.jpg",
     role: "Vice-president",
     bioSumary: ``,
     esBioSumary: ``,
@@ -80,7 +80,7 @@ export const organizersEn = [
   },{
     id: "la04",
     name: "Laura Henao",
-    pic: "laura.JPG",
+    pic: "laura.jpg",
     role: "Miembro del Comité Ejecutivo",
     bioSumary: ``,
     bio: `Former Senior Project Officer of the United States Institute of Peace for the Citizen 
@@ -97,7 +97,7 @@ export const organizersEn = [
   },{
     id: "ed05",
     name: "Edwin Pedrozo",
-    pic: "edwin.JPG",
+    pic: "edwin.jpg",
     role: "Miembro del Comité Ejecutivo",
     bioSumary: `Research Scientist at the Massachusetts Institute of Technology 
     (MIT) and MIT-Harvard Center for Ultracold Atoms (CUA). `,
@@ -117,7 +117,7 @@ export const organizersEn = [
   },{
     id: "da06",
     name: "Daniel Martinez",
-    pic: "daniel.JPG",
+    pic: "daniel.jpg",
     role: "Miembro del Comité Ejecutivo",
     bioSumary: ``,
     bio: `My name is Daniel Andres Martinez Perez born and raised in the city of Medellin, my father 
@@ -133,7 +133,7 @@ export const organizersEn = [
   {
     id: "ja07",
     name: "Juan Jose Muños",
-    pic: "juan.png",
+    pic: "juan.jpg",
     role: "Miembro del Comité Ejecutivo",
     bioSumary: ``,
     bio: `My name is Juan José Muñoz Arango, I am 19 years old and I am from the city of Cali. 
