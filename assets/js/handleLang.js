@@ -15,6 +15,7 @@ function handleLang(lang) {
 function tarnslateBySection(lang, section = "header", items) {
   // Selecciona todos los elementos que deseas traducir
   const elementosTraducidos = document.querySelectorAll(items);
+  console.log("elementosTraducidos:", elementosTraducidos);
   // Selecciona el diccionario correspondiente al lang elegido
   let diccionario = lang === 'es' ? esText : enText;
   diccionario = diccionario[section]

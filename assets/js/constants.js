@@ -167,7 +167,7 @@ export const navItems = [
 export const sections = [
   {
     name: 'header',
-    items: '#nav-home, #nav-about, #nav-schedule, #nav-speakers, #nav-hosts, #nav-donations, #nav-contact'
+    items: '#nav-home, #nav-about, #nav-schedule, #nav-speakers, #nav-hosts, #nav-donations, #nav-register, #nav-contact'
   },
   {
     name: 'banner',
@@ -184,7 +184,12 @@ export const sections = [
   },
   {
     name: 'schedule',
-    items: `#schedule-title, #schedule-day1, #schedule-day2, #schedule-day3`
+    items: `#schedule-title, #schedule-day1, #schedule-day2, #schedule-day3, #schedule-opening, #schedule-satelite,
+    #schedule-cultureSport, #schedule-break1, #schedule-peaceLive, #schedule-lunch1, #schedule-health, 
+    #schedule-break2, #schedule-representative, #schedule-environment, #schedule-tour, #schedule-intro, 
+    #schedule-education, #schedule-break3, #schedule-tech, #schedule-lunch2, #schedule-economy, #schedule-peaceLive2, 
+    #schedule-networking, #schedule-closing
+    `
   },
   {
     name: 'speakers',
@@ -200,7 +205,7 @@ export const sections = [
   },
   {
     name: 'hosts',
-    items: '#host-title, #host-role1, #host-role2, #host-role3, #host-role4, #host-role5, #host-role6, #host-role7'
+    items: '#host-title, #host-title2, #host-role1, #host-role2, #host-role3, #host-role4, #host-role5, #host-role6, #host-role7'
   },
   {
     name: 'sponsors',

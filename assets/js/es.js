@@ -5,7 +5,8 @@ export const esText = {
     schedule: "Cronograma",
     speakers: "Conferencistas 2023",
     hosts: "Organizadores",
-    donations: "Donaciones",
+    donations: "Patrocinadores",
+    register:"Registrate",
     contact: "Contactanos",
   },
   banner: {
@@ -40,6 +41,26 @@ export const esText = {
     day1: "Día 1 / 27 Abr",
     day2: "Día 2 / 28 Abr",
     day3: "Día 3 / 29 Abr",
+    satelite: "Evento satélite - Instituto Tecnológico de Massachusetts",
+    opening: "Ceremonia de Inauguración",
+    cultureSport: "Cultura y Deporte",
+    break1: "Coffee Break",
+    peaceLive: "Paz y Vida",
+    lunch1: "Almuerzo",
+    health: "Salud",
+    break2: "Coffee Break",
+    representative: "Personeros Municipales",
+    environment: "Medio Ambiente",
+    tour: "Tour Harvard / MIT",
+    intro: "Introducción del Día",
+    education: "Educación",
+    break3: "Coffee Break",
+    tech: "ciencia Tecnología e innovación",
+    lunch2: "Almuerzo",
+    economy: "Economía y Desarrollo",
+    peaceLive2: "Paz y Vida",
+    networking: "Redes",
+    closing: "Ceremonia de Calusura."
   },
   speakers: {
     conf2023: "Conferencistas 2023",
@@ -47,16 +68,17 @@ export const esText = {
   },
   venue: {
     title: "Lugar",
-    location: "Universidad de Harvard",
-    address: "1350 Massachusetts Avenue - 8th Floor",
-    detail: "Cambridge, MA 0238 - Estados Unidos",
+    location: "Centro David Rockefeller de Estudios Latinoamericanos",
+    address: "Calle Cambridge 1730",
+    detail: "Cambridge, MA 02138",
   },
   register: {
     title: "Formulario De Registro",
     button: "Registrarse"
   },
   hosts: {
-    title: "Organizadores",
+    title: "Comité ejecutivo",
+    title2: "Organizadores",
     role1: "Presidente",
     role2: "Vice Presidente",
     role3: "Comité Ejecutivo (Universidad de Chicago)",
@@ -73,7 +95,7 @@ export const esText = {
   }
   ,
   donations: {
-    title: "donaciones",
+    title: "Patrocinadores",
     info: "Por donaciones superiores a $50 USD reclama uno de los siguientes artículo en la conferencia",
     buttons: "CONTACTANOS",
     cap: "Gorra",
