@@ -64,7 +64,7 @@
 					<ul class="nav navbar-nav mu-menu navbar-right">
 						<li><a href="#mu-hero" id="nav-home">Inicio</a></li>
 						<li><a href="#mu-about" id="nav-about">La conferencia</a></li>
-						<!-- <li><a href="#mu-schedule">Calendario</a></li> -->
+						<li><a href="#mu-schedule" id="nav-schedule">Calendario</a></li>
 						<li><a href="#mu-speakers" id="nav-speakers">Conferencistas</a></li>
 						<li><a href="#mu-faq" id="nav-hosts">Organizadores</a></li>
 						<!-- <li><a href="#mu-sponsors">Patrocinadores</a></li> -->
@@ -128,7 +128,7 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="mu-about-left">
-										<img class="" src="assets/images/conf.jpeg" alt="Men Speaker">
+										<img class="conf-logo" src="assets/images/conf-logo.png" alt="Men Speaker">
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -469,14 +469,14 @@
 		<!-- End Prev-Speakers -->
 
 		<!-- Start Schedule  -->
-		<section id="mu-schedule" class="hiden" style="display: none;">
+		<section id="mu-schedule" class="hiden">
 			<div class="container">
 				<div class="row">
 					<div class="colo-md-12">
 						<div class="mu-schedule-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Schedule Detail</h2>
+								<h2 id="schedule-title" class="mu-title">Cronograma</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum
 									facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi
 									explicabo veritatis minima porro.</p>
@@ -485,10 +485,12 @@
 							<div class="mu-schedule-content-area">
 								<!-- Nav tabs -->
 								<ul class="nav nav-tabs mu-schedule-menu" role="tablist">
-									<li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab"
-											data-toggle="tab">1 Day / 19 Feb</a></li>
+									<li role="presentation"  class="active"><a href="#first-day" aria-controls="first-day" role="tab"
+											data-toggle="tab" id="schedule-day1" >1 Day / 27 Abr</a></li>
 									<li role="presentation"><a href="#second-day" aria-controls="second-day" role="tab"
-											data-toggle="tab">2 Day / 20 Feb</a></li>
+											data-toggle="tab" id="schedule-day2">2 Day / 28 Abr</a></li>
+									<li role="presentation"><a href="#third-day" aria-controls="third-day" role="tab"
+											data-toggle="tab" id="schedule-day3">3 Day / 29 Abr</a></li>
 								</ul>
 
 								<!-- Tab panes -->
@@ -501,43 +503,13 @@
 													<h3>Breakfast</h3>
 												</div>
 											</li>
-											<li>
-												<div class="mu-single-event">
-													<img src="assets/images/speaker-1.jpg" alt="event speaker">
-													<p class="mu-event-time">10.00 AM</p>
-													<h3>Advanced SVG Animations</h3>
-													<span>By Karl Groves</span>
-												</div>
-											</li>
-											<li>
-												<div class="mu-single-event">
-													<img src="assets/images/speaker-2.jpg" alt="event speaker">
-													<p class="mu-event-time">11.00 AM</p>
-													<h3>Presenting Work with Confidence</h3>
-													<span>By Sarah Dransner</span>
-												</div>
-											</li>
-											<li>
-												<div class="mu-single-event">
-													<img src="assets/images/speaker-3.jpg" alt="event speaker">
-													<p class="mu-event-time">12.00 AM</p>
-													<h3>Keynote on UX & UI Design</h3>
-													<span>By Ned Stark</span>
-												</div>
-											</li>
-											<li>
-												<div class="mu-single-event">
-													<p class="mu-event-time">1.00 PM</p>
-													<h3>The End</h3>
-												</div>
-											</li>
 										</ul>
 									</div>
-									<div role="tabpanel" class="tab-pane fade mu-event-timeline" id="second-day">
+									<div role="tabpanel" class="tab-pane fade mu-event-timeline" id="#third-day">
 										<ul>
 											<li>
 												<div class="mu-single-event">
-													<p class="mu-event-time">9.00 AM</p>
+													<p class="mu-event-time">11.00 AM</p>
 													<h3>Breakfast</h3>
 												</div>
 											</li>
@@ -577,7 +549,7 @@
 										<ul>
 											<li>
 												<div class="mu-single-event">
-													<p class="mu-event-time">9.00 AM</p>
+													<p class="mu-event-time">111.00 AM</p>
 													<h3>Breakfast</h3>
 												</div>
 											</li>
@@ -613,7 +585,46 @@
 											</li>
 										</ul>
 									</div>
-
+									<div role="tabpanel" class="tab-pane fade mu-event-timeline" id="second-day">
+										<ul>
+											<li>
+												<div class="mu-single-event">
+													<p class="mu-event-time">11.00 AM</p>
+													<h3>Breakfast</h3>
+												</div>
+											</li>
+											<li>
+												<div class="mu-single-event">
+													<img src="assets/images/speaker-1.jpg" alt="event speaker">
+													<p class="mu-event-time">10.00 AM</p>
+													<h3>Advanced SVG Animations</h3>
+													<span>By Karl Groves</span>
+												</div>
+											</li>
+											<li>
+												<div class="mu-single-event">
+													<img src="assets/images/speaker-2.jpg" alt="event speaker">
+													<p class="mu-event-time">11.00 AM</p>
+													<h3>Presenting Work with Confidence</h3>
+													<span>By Sarah Dransner</span>
+												</div>
+											</li>
+											<li>
+												<div class="mu-single-event">
+													<img src="assets/images/speaker-3.jpg" alt="event speaker">
+													<p class="mu-event-time">12.00 AM</p>
+													<h3>Keynote on UX & UI Design</h3>
+													<span>By Ned Stark</span>
+												</div>
+											</li>
+											<li>
+												<div class="mu-single-event">
+													<p class="mu-event-time">1.00 PM</p>
+													<h3>The End</h3>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
 
 							</div>
@@ -853,10 +864,8 @@
 										</div>
 									</div> -->
 
-									<a 
-										href="https://docs.google.com/forms/d/e/1FAIpQLSeGpuQTh6EboOPxUtIoeXB3PpRS1ikke_6v0n9G5BhF6yXPZQ/viewform?usp=sf_link"
-										target="_blank"
-									>
+									<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGpuQTh6EboOPxUtIoeXB3PpRS1ikke_6v0n9G5BhF6yXPZQ/viewform?usp=sf_link"
+										target="_blank">
 										<button id="reg-button" type="button" class="mu-reg-submit-btn">REGISTER NOW</button>
 									</a>
 								</form>
@@ -886,7 +895,7 @@
 								<div class="mu-speakers-slider">
 
 									<!-- Start single speaker -->
-									<div class="mu-single-speakers mu-single-organizer"  id="ped01">
+									<div class="mu-single-speakers mu-single-organizer" id="ped01">
 										<img class="mu-mini-organizer" src="assets/images/pedro.jpg" alt="speaker img">
 										<div class="mu-single-speakers-info">
 											<h3>Pedro De la Torre</h3>
@@ -918,7 +927,7 @@
 
 
 									<!-- Start single speaker -->
-									<div class="mu-single-speakers mu-single-organizer"  id="la04">
+									<div class="mu-single-speakers mu-single-organizer" id="la04">
 										<img class="mu-mini-organizer" src="assets/images/laura.JPG" alt="speaker img">
 										<div class="mu-single-speakers-info">
 											<h3>Laura Henao </h3>
@@ -963,7 +972,8 @@
 							<!-- Organizer modal -->
 							<div class="mu-orginizer-frame">
 								<!-- Start About Organizer -->
-								<a id="mu-close-about" class="mu-video-close-btn" href="" target="_blank"><i class="fa fa-times" aria-hidden="true"></i></a>
+								<a id="mu-close-about" class="mu-video-close-btn" href="" target="_blank"><i class="fa fa-times"
+										aria-hidden="true"></i></a>
 								<section id="mu-about">
 									<div class="container">
 										<div class="row">
@@ -1004,96 +1014,50 @@
 		<!-- End Speakers -->
 
 		<!-- Start Sponsors -->
-		<section id="mu-sponsors" style="display: none;">
+		<section id="mu-sponsors">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="mu-sponsors-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Our Sponsors</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint assumenda ut molestias doloremque
-									ipsam, fugit laborum totam, pariatur est cumque at, repudiandae officia ex dolores quas minus optio,
-									iusto soluta?</p>
+								<h2 class="mu-title">Organizadores</h2>
 							</div>
 
 							<!-- Start spnonsors brand logo -->
 							<div class="mu-sponsors-content">
 								<div class="row">
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
+									<div class="col-md-3 col-sm-6 col-xs-6">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-1.png" alt="Brand Logo">
+											<img src="assets/images/harvard.jpg" alt="Brand Logo">
 										</div>
+										<h4 class="text-center" id="sponsor1">Harvard Colombian Student Society (HCSS) </h4
+											class="text-center">
+										<p></p>
 									</div>
 
-									<div class="col-md-2 col-sm-4 col-xs-4">
+									<div class="col-md-3 col-sm-6 col-xs-6">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
+											<img src="assets/images/mit_col.jpg" alt="Brand Logo">
 										</div>
+										<h4 class="text-center" id="sponsor2">MIT Colombian Association</h4 class="text-center">
 									</div>
 
-									<div class="col-md-2 col-sm-4 col-xs-4">
+									<div class="col-md-3 col-sm-6 col-xs-6">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-3.png" alt="Brand Logo">
+											<img src="assets/images/uchicago.jpg" alt="Brand Logo">
 										</div>
+										<h4 class="text-center" id="sponsor3">Colombias at UChicago</h4 class="text-center">
 									</div>
 
-									<div class="col-md-2 col-sm-4 col-xs-4">
+									<div class="col-md-3 col-sm-6 col-xs-6">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-4.png" alt="Brand Logo">
+											<img src="assets/images/huskies.jpg" alt="Brand Logo">
 										</div>
+										<h4 class="text-center" id="sponsor4">Colombian Huskies</h4 class="text-center">
 									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-5.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-6.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-7.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-8.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-9.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-1.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-3.png" alt="Brand Logo">
-										</div>
-									</div>
-
 								</div>
+
 							</div>
 							<!-- End spnonsors brand logo -->
 
@@ -1127,7 +1091,8 @@
 										<div class="mu-single-price">
 											<img src="./assets/images/13.png" alt="">
 											<h3 id="dona-cap" class="mu-price-title">Gorra</h3>
-											<a id="dona-buttons" class="mu-register-btn" href="#"> Contactanos</a>
+											<a id="dona-buttons" class="mu-register-btn" href="https://forms.gle/rHPDpzkuoGUeB4TE7"
+												target="_blank"> Contactanos</a>
 										</div>
 									</div>
 									<!-- / single price item -->
@@ -1138,7 +1103,8 @@
 											<img src="./assets/images/14.png" alt="">
 											<span class="mu-price-tag">Popular</span>
 											<h3 id="dona-shirt" class="mu-price-title">Camiseta</h3>
-											<a id="dona-buttons" class="mu-register-btn" href="#"> Contactanos</a>
+											<a id="dona-buttons" class="mu-register-btn" href="https://forms.gle/rHPDpzkuoGUeB4TE7"
+												target="_blank"> Contactanos</a>
 										</div>
 									</div>
 									<!-- / single price item -->
@@ -1148,7 +1114,8 @@
 										<div class="mu-single-price">
 											<img src="./assets/images/TULA.png" alt="">
 											<h3 id="dona-bag" class="mu-price-title">Tula</h3>
-											<a id="dona-buttons" class="mu-register-btn" href="#"> Contactanos</a>
+											<a id="dona-buttons" class="mu-register-btn" href="https://forms.gle/rHPDpzkuoGUeB4TE7"
+												target="_blank"> Contactanos</a>
 										</div>
 									</div>
 									<!-- / single price item -->
@@ -1264,6 +1231,6 @@
 	<!-- Custom js -->
 	<script type="module" src="assets/js/custom.js"></script>
 	<script type="module" src="assets/js/handleLang.js"></script>
-	</body>
+</body>
 
 </html>

@@ -33,22 +33,12 @@ function tarnslateBySection(lang, section = "header", items) {
 }
 
 function selectedLang (currentLang) {
-  if(currentLang==="es") {
-    btnEs.style.backgroundColor = "white"
-    btnEs.style.color = "black"
-    btnEn.style.color = "white"
-    btnEn.style.backgroundColor = "#0168FC"
-    btnEs.textContent = "Español"
-    btnEn.textContent = "Inglés"
-
-  }else{
-    btnEn.style.backgroundColor = "white"
-    btnEn.style.color = "black"
-    btnEs.style.color = "white"
-    btnEs.style.backgroundColor = "#0168FC"
-    btnEs.textContent = "Spanish"
-    btnEn.textContent = "English"
-  }
+  btnEs.style.backgroundColor = currentLang === "es" ? "white" : "#0168FC";
+  btnEs.style.color = currentLang === "es" ? "black" : "white";
+  btnEn.style.backgroundColor = currentLang === "es" ? "#0168FC" : "white";
+  btnEn.style.color = currentLang === "es" ? "white" : "black";
+  btnEs.textContent = currentLang === "es" ? "Español" : "Spanish";
+  btnEn.textContent = currentLang === "es" ? "Inglés" : "English";
 }
 
 const btnEs = document.getElementById('btn-es');

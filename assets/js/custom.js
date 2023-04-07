@@ -42,7 +42,7 @@ import { organizersEn } from "./constants.js";
 	/*  2. EVENT TIME COUNTER
 	/* ----------------------------------------------------------- */
 
-	$('#mu-event-counter').countdown('2023/04/28').on('update.countdown', function (event) {
+	$('#mu-event-counter').countdown('2023/04/27').on('update.countdown', function (event) {
 		var $this = $(this).html(event.strftime(''
 			+ '<span class="mu-event-counter-block"><span>%D</span> D</span> '
 			+ '<span class="mu-event-counter-block"><span>%H</span> H</span> '

@@ -167,7 +167,7 @@ export const navItems = [
 export const sections = [
   {
     name: 'header',
-    items: '#nav-home, #nav-about, #nav-speakers, #nav-hosts, #nav-donations, #nav-contact'
+    items: '#nav-home, #nav-about, #nav-schedule, #nav-speakers, #nav-hosts, #nav-donations, #nav-contact'
   },
   {
     name: 'banner',
@@ -181,6 +181,10 @@ export const sections = [
     name: 'aboutConference',
     items: `#about-missionTitle, #about-missiontText,#about-visionTitle, #about-visionText, #about-subscribe, #about-previousConf,#about-conf2021,
     #about-conf2019, #about-conf2018`
+  },
+  {
+    name: 'schedule',
+    items: `#schedule-title, #schedule-day1, #schedule-day2, #schedule-day3`
   },
   {
     name: 'speakers',
@@ -199,9 +203,14 @@ export const sections = [
     items: '#host-title, #host-role1, #host-role2, #host-role3, #host-role4, #host-role5, #host-role6, #host-role7'
   },
   {
+    name: 'sponsors',
+    items: '#sponsor1, #sponsor2, #sponsor3, #sponsor4'
+  },
+  {
     name: 'donations',
     items: '#dona-title,#dona-info,#dona-cap,#dona-buttons,#dona-shirt,#dona-buttons,#dona-bag,#dona-buttons'
   },
+
   {
     name: 'footer',
     items: '#foot-contact, #foot-follow'

@@ -2,7 +2,8 @@ export const enText = {
   header: {
     home: "Home",
     about: "About",
-    speakers: "Speakers",
+    schedule: "Schedule",
+    speakers: "Speakers 2023",
     hosts: "Hosts",
     donations: "Donations",
     contact: "Contact Us",
@@ -10,7 +11,7 @@ export const enText = {
   banner: {
     title: "Welcome to the Colombian Conference 2023:",
     subtitle: "Innovative Solutions for Colombia",
-    briefDate: "April 28 - 29, 2023. Cambridge, United States"
+    briefDate: "April 27 - 29, 2023. Cambridge, United States"
   },
   timer: {
     days: "Days",
@@ -32,6 +33,12 @@ export const enText = {
     conf2021: "Speakers 2021",
     conf2019: "Speakers 2019",
     conf2018: "Speakers 2018",
+  },
+  schedule: {
+    title: "Schedule Detail",
+    day1: "Day 1",
+    day2: "Day 2",
+    day3: "Day 3",
   },
   speakers : {
     conf2023: "Speakers 2023",
@@ -57,6 +64,13 @@ export const enText = {
     role6: "Executive Committee (FLorida International University)",
     role7: "Executive Committee (Northeastern University)"
   },
+  sponsors: {
+    sponsor1: "Harvard Colombian Student Society",
+    sponsor2: "MIT Colombian Association",
+    sponsor3: "Colombias at UChicago",
+    sponsor4: "Colombian Huskies"
+  }
+  ,
   donations: {
     title: "Donations",
     info: "For donations over $50 USD, claim one of the following items at the conference",

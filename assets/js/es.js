@@ -2,7 +2,8 @@ export const esText = {
   header: {
     home: "Inicio",
     about: "La conferencia",
-    speakers: "Conferencistas",
+    schedule: "Cronograma",
+    speakers: "Conferencistas 2023",
     hosts: "Organizadores",
     donations: "Donaciones",
     contact: "Contactanos",
@@ -10,7 +11,7 @@ export const esText = {
   banner: {
     title: "Bienvenidos a la Conferencia Colombiana 2023:",
     subtitle: "Soluciones Innovadoras para Colombia",
-    briefDate: "28 - 29 Abril 2023. Cambridge, Estados Unidos"
+    briefDate: "27 - 29 Abril 2023. Cambridge, Estados Unidos"
   },
   timer: {
     days: "Días",
@@ -30,12 +31,18 @@ export const esText = {
     para generar soluciones innovadoras y efectivas para el desarrollo de nuestro país.`,
     previousConf: "Versiones anteriores",
     subscribe: "Suscríbete a nuestro canal",
-    conf2021: "Conferenciastas 2021",
-    conf2019: "Conferenciastas 2019",
-    conf2018: "Conferenciastas 2018",
+    conf2021: "Conferencistas 2021",
+    conf2019: "Conferencistas 2019",
+    conf2018: "Conferencistas 2018",
+  },
+  schedule: {
+    title: "Cronograma",
+    day1: "Día 1 / 27 Abr",
+    day2: "Día 2 / 28 Abr",
+    day3: "Día 3 / 29 Abr",
   },
   speakers: {
-    conf2023: "Conferenciastas 2023",
+    conf2023: "Conferencistas 2023",
     soon: "Los anuncíaremos muy pronto",
   },
   venue: {
@@ -58,6 +65,13 @@ export const esText = {
     role6: "Comité Ejecutivo (Unversidad Internacional de Florida)",
     role7: "Comité Ejecutivo (Universidad del Noroeste)"
   },
+  sponsors: {
+    sponsor1: "Asociación de estudiantes colombianos en Harvard",
+    sponsor2: "Asociación de estudiantes colombnianos en MIT",
+    sponsor3: "Asociación de estudiantes colombnianos en la universidad de Chicago",
+    sponsor4: "Asociación de estudiantes colombnianos en la universidad del Noroeste"
+  }
+  ,
   donations: {
     title: "donaciones",
     info: "Por donaciones superiores a $50 USD reclama uno de los siguientes artículo en la conferencia",
