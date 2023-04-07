@@ -1869,3 +1869,7 @@ button:focus {
 	width: 431px;
 	height: 376px;
 }
+
+.hide {
+	display: none;
+}

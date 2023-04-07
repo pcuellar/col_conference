@@ -212,28 +212,37 @@ import { organizersEn } from "./constants.js";
 	/* ----------------------------------------------------------- */
 
 	$('.mu-single-organizer').on('click', function (event) {
-		const currentLang = localStorage.getItem("lang") 
-		console.log("organizersEn", organizersEn[0]);
+		const currentLang = localStorage.getItem("lang")
 		event.preventDefault();
 		const currId = event.currentTarget.id;
+		const pics = ["bio-pic-ped01", "bio-pic-pa02", "bio-pic-ga03", "bio-pic-ja07", "bio-pic-da06", "bio-pic-ed05", "bio-pic-la04"]
 		const currOrg = organizersEn.filter(org => org.id === currId)[0]
+		pics.forEach(pic => {
+			const curPic = document.getElementById(pic)
+			if (pic.includes(currId)) {
+				curPic.classList.remove('hide')
+				curPic.classList.add('mu-bio-pic')
+			} else {
+				curPic.classList.remove('mu-bio-pic')
+				curPic.classList.add('hide')
+			}
+		});
 		$('#mu-org-name').html(currOrg.name)
-		$('#bio-pic').attr('src',`/assets/images/${currOrg.pic}`)
-		$('#bio-text').html(currentLang === "es" ? currOrg.esBio:currOrg.bio)
-		$('#bio-sumary').html(currentLang === "es" ? currOrg.esBioSumary: currOrg.bioSumary)
+		//$('#bio-pic').attr('src',`/assets/images/${currOrg.pic}`)
+		$('#bio-text').html(currentLang === "es" ? currOrg.esBio : currOrg.bio)
+		$('#bio-sumary').html(currentLang === "es" ? currOrg.esBioSumary : currOrg.bioSumary)
 		$('.mu-orginizer-frame').addClass('mu-video-iframe-display');
-
 	});
 
 	// when click the close btn
 
-    // disappear iframe window
-    
-		$('#mu-close-about').on('click', function (event) {
-			event.preventDefault();
-			$('.mu-orginizer-frame').removeClass('mu-video-iframe-display');
-	
-		});
+	// disappear iframe window
+
+	$('#mu-close-about').on('click', function (event) {
+		event.preventDefault();
+		$('.mu-orginizer-frame').removeClass('mu-video-iframe-display');
+
+	});
 
 
 
