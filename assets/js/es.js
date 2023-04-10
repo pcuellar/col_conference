@@ -67,10 +67,11 @@ export const esText = {
     soon: "Los anuncíaremos muy pronto",
   },
   venue: {
-    title: "Lugar",
-    location: "Centro David Rockefeller de Estudios Latinoamericanos",
-    address: "Calle Cambridge 1730",
-    detail: "Cambridge, MA 02138",
+    title: "Ubicaciones",
+    venue1: "27 Abr",
+    venue2: "28 Abr",
+    venue3: "28 Abr",
+    venue4: "29 Abr"
   },
   register: {
     title: "Formulario De Registro",

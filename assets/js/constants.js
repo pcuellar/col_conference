@@ -197,7 +197,7 @@ export const sections = [
   },
   {
     name: 'venue',
-    items: '#venue-title, #venue-location, #venue-address, #venue-detail'
+    items: '#venue-title, #venue1, #venue2, #venue3, #venue4'
   },
   {
     name: 'register',

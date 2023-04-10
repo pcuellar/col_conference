@@ -66,10 +66,11 @@ export const enText = {
     soon: "We'll announce them soon",
   },
   venue: {
-    title: "Lugar",
-    location: "David Rockefeller Center for Latin American Studies",
-    address: "1730 Cambridge Street",
-    detail: "Cambridge, MA 02138",
+    title: "Locations",
+    venue1: "27 Apr",
+    venue2: "28 Apr",
+    venue3: "28 Apr",
+    venue4: "29 Apr"
   },
   register: {
     title: "Registration Form",
