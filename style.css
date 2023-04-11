@@ -808,6 +808,7 @@ button:focus {
 .mu-single-speakers img {
 	width: 270px;
 	height: 300px;
+	object-fit: cover;
 }
 .mu-speakers-slider .slick-next {
 	right: -60px;
@@ -932,19 +933,36 @@ button:focus {
 
 .mu-single-price {
 	background-color: #f8f8f8;
-	display: inline;
-	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	text-align: center;
 	position: relative;
 	width: 100%;
 	padding: 15px;
 	overflow: hidden;
 }
+.mu-single-mod {
+	min-height: 512px;
+}
+
+.mu-single-price h3 {
+	font-size: 12px;
+}
+
+.mu-single-price ul li {
+	font-size: 14px;
+}
 
 .mu-single-price img {
 	width: 330px;
+	object-fit: cover;
+}
+
+.mu-single-mod img {
+	width: 330px;
 	height: 186px;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 .mu-single-price-head {
@@ -1865,3 +1883,11 @@ button:focus {
 	
 }
 
+.conf-logo {
+	width: 431px;
+	height: 376px;
+}
+
+.hide {
+	display: none;
+}
