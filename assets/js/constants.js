@@ -157,6 +157,24 @@ export const organizersEn = [
       esfuerzo al bien de toda la gente de Colombia y del mundo entero.
 
     `
+  },
+  {
+    id: "al08",
+    name: "Alejandro Garcia",
+    role: "Miembro del Comité Ejecutivo",
+    bioSumary: ``,
+    bio: `Alejandro is a doctor from the Universidad de los Andes, a Master of Public Health student at 
+      Harvard University and serves as president of the Harvard Colombian Student Society (HCSS). 
+      He has a great interest in the development of science and medicine in Colombia through innovation. 
+      He is about to start his otolaryngology residency at the University of Iowa.
+    `,
+    esBioSumary: '',
+    esBio: `
+      Alejandro es médico de la Universidad de los Andes, estudiante de Maestria en Salud Pública en la 
+      Universidad de Harvard y se desempeña como presidente de Harvard Colombian Student Society (HCSS). 
+      Tiene un gran interés por el desarrollo de la ciencia y la medicina en Colombia por medio de la innovación. 
+      Se encuentra próximo a empezar su residencia en Otorrinolaringología en la Universidad de Iowa.
+    `
   }
 ]
 
@@ -205,7 +223,7 @@ export const sections = [
   },
   {
     name: 'hosts',
-    items: '#host-title, #host-title2, #host-role1, #host-role2, #host-role3, #host-role4, #host-role5, #host-role6, #host-role7'
+    items: '#host-title, #host-title2, #host-role1, #host-role2, #host-role3, #host-role4, #host-role5, #host-role6, #host-role7, #host-role8'
   },
   {
     name: 'sponsors',

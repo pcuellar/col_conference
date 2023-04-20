@@ -936,6 +936,7 @@ button:focus {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	text-align: center;
 	position: relative;
 	width: 100%;
@@ -1455,7 +1456,7 @@ button:focus {
 .mu-bio-pic {
 	width: 550px;
 	height: 360px;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 
@@ -1890,4 +1891,12 @@ button:focus {
 
 .hide {
 	display: none;
+}
+
+.mu-single-event-speakers p {
+	font-weight: 400;
+}
+.mu-single-event-speakers {
+	text-align: justify;
+	margin-left: 10px;
 }

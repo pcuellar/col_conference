@@ -215,7 +215,7 @@ import { organizersEn } from "./constants.js";
 		const currentLang = localStorage.getItem("lang")
 		event.preventDefault();
 		const currId = event.currentTarget.id;
-		const pics = ["bio-pic-ped01", "bio-pic-pa02", "bio-pic-ga03", "bio-pic-ja07", "bio-pic-da06", "bio-pic-ed05", "bio-pic-la04"]
+		const pics = ["bio-pic-ped01", "bio-pic-pa02", "bio-pic-ga03", "bio-pic-ja07", "bio-pic-da06", "bio-pic-ed05", "bio-pic-la04", "bio-pic-al08"]
 		const currOrg = organizersEn.filter(org => org.id === currId)[0]
 		pics.forEach(pic => {
 			const curPic = document.getElementById(pic)
